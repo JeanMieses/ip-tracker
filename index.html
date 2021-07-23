@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+  <link rel="stylesheet" href="assets/css/index.css">
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+
+<body>
+
+  <section class="flex-container">
+    <div class="search-bar">
+      <h1>ip address tracker</h1>
+      <form class="">
+        <label for="ip_address"></label>
+        <input placeholder="Search for any IP address" id="ip_address" type="text" name="ip_address" value="">
+        <button>></button>
+      </form>
+    </div>
+
+    <div class="data">
+      <div class="">
+        <p class="text">ip address</p>
+        <p class="show-ip"></p>
+      </div>
+
+      <div class="">
+        <p class="text">location</p>
+        <p class="location"></p>
+      </div>
+
+      <div class="">
+        <p class="text">timezone</p>
+        <p class="timezone"></p>
+      </div>
+
+      <div class="">
+        <p class="text">isp</p>
+        <p class="isp"></p>
+      </div>
+    </div>
+
+    <div id="map"></div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <script src="assets/javascript/index.js"></script>
+</body>
+
+</html>
